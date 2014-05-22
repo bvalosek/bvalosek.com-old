@@ -9,3 +9,4 @@ public/bower_components
 dist
 app/server/newrelic_agent.log
 newrelic_agent.log
+npm-debug.log

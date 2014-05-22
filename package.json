@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "bower install && grunt",
-    "migrate": "db-migrate up",
+    "migrate": "db-migrate -e local up",
     "postinstall": "npm run build && npm run migrate",
     "start": "node ./app/server/main.js"
   },
