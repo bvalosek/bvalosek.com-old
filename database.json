@@ -1,0 +1,9 @@
+{
+  "local": {
+    "driver"   : "pg",
+    "user"     : "local",
+    "password" : "local",
+    "host"     : "127.0.0.1",
+    "database" : "bvalosek_com"
+  }
+}

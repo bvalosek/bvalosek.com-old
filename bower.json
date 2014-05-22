@@ -1,0 +1,7 @@
+{
+  "name": "www.bvalosek.com",
+  "dependencies": {
+    "roboto-fontface": "~0.1.5",
+    "font-awesome": "~4.1.0"
+  }
+}
