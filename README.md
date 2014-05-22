@@ -2,6 +2,22 @@
 
 My personal site.
 
+## Requirements
+
+* NodeJS
+* PostgreSQL
+* Redis
+
+## To run
+
+This will install deps, build the client, run the migrations, and start the
+server:
+
+```
+$ npm install
+$ npm start
+```
+
 ## Features
 
 * PostgreSQL for data storage
