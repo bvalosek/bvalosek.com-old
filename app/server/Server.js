@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var session      = require('express-session');
 var RedisStore   = require('connect-redis')(session);
 var express      = require('express');
+var favicons     = require('connect-favicons');
 
 /**
  * Setup our express server with all the goodies we need.
@@ -30,7 +31,11 @@ function Server(redis, config, http)
   http.set('view engine', 'hbs.html');
   console.log('view path set to %s', viewPath);
 
+  // Favvies
+  http.use(favicons(path.join(__dirname, '../../public/icons')));
+
   // Server out static files
   http.use(express.static(config('http.webroot')));
   console.log('static server middleware added');
+
 }

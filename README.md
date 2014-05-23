@@ -1,6 +1,6 @@
 # bvalosek.com
 
-My personal site.
+My personal site / current experimentation with NodeJS.
 
 ## Requirements
 
@@ -25,7 +25,6 @@ $ npm start
 * Express for http server middleware
 * Handlebars for server and client view templates
 * Billy for application architecture
-* New Relic for monitoring
 * Grunt for client-app building
 * Browserify for commonJS modules in the browser
 * Bower for installing frontend components
