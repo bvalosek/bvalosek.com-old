@@ -12,9 +12,7 @@ var quotes = require('../endpoints/quotes.js');
  */
 function Routes(http, app)
 {
-  app.make(require('../routes/api.js'));
-  app.make(require('../routes/debug.js'));
-  app.make(require('../routes/home.js'));
+  app.make(require('../routes.js'));
   console.log('web routes added');
 }
 

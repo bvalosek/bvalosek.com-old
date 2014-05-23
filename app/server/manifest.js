@@ -7,7 +7,6 @@ module.exports = {
     require('./services/Redis.js'),
     require('./services/HttpServer.js'),
     require('./services/Routes.js'),
-    require('./services/StaticServer.js')
   ],
   config: (function() {
     var configs = {};
