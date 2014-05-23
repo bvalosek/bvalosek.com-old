@@ -35,7 +35,7 @@ function Redis(app, config)
     });
   }
 
-  app.register('redis', client);
+  app.register('redis', client).asInstance();
 }
 
 /**

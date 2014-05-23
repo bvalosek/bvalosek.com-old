@@ -17,7 +17,7 @@ function Postgres(config, app)
   }
 
   this.adapter = new PostgresAdapter(url);
-  app.register('sql', this.adapter);
+  app.register('sql', this.adapter).asInstance();
 }
 
 /**
