@@ -1,0 +1,6 @@
+# Ignore all build files to reduce slug size on heroku
+node_modules/grunt
+node_modules/browserify
+node_modules/load-grunt-tasks
+node_modules/db-migrate
+node_modules/bower
