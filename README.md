@@ -5,13 +5,10 @@ My personal site / current experimentation with NodeJS.
 ## Requirements
 
 * NodeJS
-* PostgreSQL
-* Redis
 
 ## To run
 
-This will install deps, build the client, run the migrations, and start the
-server:
+This will install deps, build the client, and start the server:
 
 ```
 $ npm install
@@ -20,8 +17,6 @@ $ npm start
 
 ## Features
 
-* PostgreSQL for data storage
-* Redis for caching and session storage
 * Express for http server middleware
 * Handlebars for server and client view templates
 * Billy for application architecture
