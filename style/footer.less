@@ -1,0 +1,67 @@
+@import 'vars';
+
+footer {
+    @media (max-width: 639px) {
+        font-size: 0.8em;
+    }
+
+    .container {
+        .clear-fix;
+        .bounded(@bound-width);
+        padding: 40px 20px;
+        text-align: center;
+
+        & > div {
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        @media (min-width: 800px) {
+            padding: 4% 0 2% 0;
+        }
+    }
+
+    .email {
+        color: #555;
+        font-size: 0.9em;
+        text-decoration: none;
+        border-bottom: solid 2px #aaa;
+
+        &:hover {
+            color: #777;
+        }
+    }
+
+    .social {
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 20px 0;
+
+                @media (max-width: 639px) {
+                    margin: 0 10px 0;
+                }
+
+                list-style-type: none;
+                font-size: 2em;
+
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(0,0,0,.5);
+
+            &:hover {
+                color: rgba(0,0,0,1);
+            }
+        }
+    }
+
+    .version {
+        letter-spacing: 0.1em;
+        font-size: 0.8em;
+        opacity: 0.8;
+    }
+}
+

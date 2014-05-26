@@ -1,0 +1,76 @@
+@import 'util';
+@import 'vars';
+
+.info {
+    @media (min-width: 800px) {
+        padding: 3% 0;
+    }
+
+    .container {
+        .clear-fix;
+        .bounded(@bound-width);
+        line-height: 1.5em;
+
+        & > div {
+            padding: 20px;
+        }
+
+    }
+
+    &.bio {
+        background: #99bcdd*0.5;
+        color: white;
+    }
+
+    &.code {
+        background: #99bcdd*0.9;
+        color: white;
+    }
+
+    strong {
+        font-weight: 400;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+        border-bottom: solid 2px rgba(255,255,255,0.2);
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .big-icon {
+        @media (max-width: 639px) {
+          margin-top: 20px;
+        }
+        .float-at(25%, 640px);
+        text-align: center;
+
+        i {
+            font-size: 5em;
+
+            @media (min-width: 1024px) {
+                font-size: 7em;
+            }
+            @media (min-width: 1300px) {
+                font-size: 8em;
+            }
+        }
+    }
+
+    .copy {
+        .float-at(40%, 810px);
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+
+    .itty {
+        .float-at(35%, 810px);
+        opacity: 0.7;
+        font-size: 0.9em;
+    }
+}
+

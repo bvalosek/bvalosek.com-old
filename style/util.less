@@ -1,0 +1,30 @@
+// Only mixins and functions, to prevent cluttering up generated CSS file
+
+// Classic
+.clear-fix() {
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear:both;
+    }
+}
+
+// Ensure that content's width doesnt excede @w, centered
+.bounded(@w:1024px) {
+    width: 100%;
+    margin: 0 auto;
+    max-width: @w;
+}
+
+// Responsive style. Keep a div @p wide until @w pixels. Float when big enough
+// to stack
+.float-at(@p:50%, @w:640px) {
+    width: 100%;
+
+    @media (min-width: @w) {
+        width: @p;
+        float: left;
+    }
+}
