@@ -8,7 +8,5 @@ var Application = require('billy').Application;
  */
 module.exports = function(app, http)
 {
-  http.use('/quotes.json', app.make(require('./endpoints/quotes.js')));
-  http.use('/debug', app.make(require('./endpoints/debug.js')));
   http.get('/', app.make(require('./pages/home.js')));
 };

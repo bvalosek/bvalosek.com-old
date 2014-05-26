@@ -3,8 +3,6 @@ var path = require('path');
 
 module.exports = {
   services: [
-    require('./services/Postgres.js'),
-    require('./services/Redis.js'),
     require('./services/HttpServer.js'),
     require('./services/Routes.js'),
   ],
