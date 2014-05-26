@@ -1,6 +1,6 @@
 {
   "name": "www.bvalosek.com",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Brandon Valosek's personal site.",
   "main": "./app/server/main.js",
   "engines": {
